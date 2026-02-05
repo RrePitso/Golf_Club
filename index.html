@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Bank Golf Club | See the Sea from Every Tee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        .hero-bg { 
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 flex flex-col min-h-screen">
+
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter text-emerald-900">
+                WEST BANK <span class="text-stone-500 font-light text-base">GOLF CLUB</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-widest uppercase text-stone-600">
+                <a href="index.html" class="text-emerald-800">Home</a>
+                <a href="golf.html" class="hover:text-emerald-800 transition">The Course</a>
+                <a href="membership.html" class="hover:text-emerald-800 transition">Membership</a>
+                <a href="contact.html" class="hover:text-emerald-800 transition">Contact</a>
+            </div>
+            <a href="tel:0437311523" class="hidden md:inline-block bg-emerald-900 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-emerald-800 transition shadow-lg">
+                Book a Tee
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero-bg h-[85vh] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl animate-fade-in-up">
+            <p class="uppercase tracking-[0.3em] text-sm mb-4 text-emerald-300 font-semibold">East London, South Africa</p>
+            <h1 class="text-5xl md:text-8xl mb-6 leading-tight">See the sea from <br/> <i class="font-serif italic text-emerald-400">every tee.</i></h1>
+            <p class="text-lg md:text-xl font-light mb-10 text-stone-200 max-w-2xl mx-auto">
+                Home to the historic Hood Point Lighthouse. Experience the wild beauty of the Eastern Cape’s premier coastal course.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="golf.html" class="bg-white text-emerald-900 px-8 py-4 rounded font-bold uppercase tracking-wider hover:bg-stone-100 transition shadow-xl">
+                    View Green Fees
+                </a>
+                <a href="membership.html" class="border border-white text-white px-8 py-4 rounded font-bold uppercase tracking-wider hover:bg-white/10 transition">
+                    Join the Club
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6">
+                <div class="inline-block border-b-2 border-emerald-800 pb-1 uppercase tracking-widest text-emerald-800 font-bold text-xs">Since 1907</div>
+                <h2 class="text-4xl md:text-5xl text-stone-900 leading-tight">A Historic Course on the Ocean's Edge</h2>
+                <p class="text-stone-600 leading-relaxed text-lg">
+                    Founded over a century ago, West Bank Golf Club is one of only three courses in South Africa with a working lighthouse in its midst. Whether you are battling the coastal winds on our signature 17th Par 3 or enjoying the view from the 19th hole, the ocean is your constant companion.
+                </p>
+                <div class="pt-4">
+                    <a href="golf.html" class="text-emerald-800 font-bold border-b border-emerald-800 hover:text-emerald-600 transition">Explore the Course Layout &rarr;</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-emerald-100 rounded-xl transform rotate-3 -z-10"></div>
+                <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&q=80&w=1000" alt="Golf Course View" class="rounded-lg shadow-2xl w-full object-cover h-96">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-400 py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 mb-8 text-sm">
+            <div class="col-span-1 md:col-span-2">
+                <h4 class="text-white text-xl mb-4">West Bank Golf Club</h4>
+                <p class="max-w-xs">One of the few golf clubs in the world where every tee offers a view of the ocean. Come play under the Hood Point Lighthouse.</p>
+            </div>
+            <div>
+                <h5 class="text-white font-bold uppercase tracking-wider mb-4">Contact</h5>
+                <p>1 Wetzlar Street, West Bank<br>East London, SA</p>
+                <p class="mt-2"><a href="tel:0437311523" class="hover:text-white">043 731 1523</a></p>
+                <p><a href="mailto:denean@westbankgolfclub.co.za" class="hover:text-white">denean@westbankgolfclub.co.za</a></p>
+            </div>
+            <div>
+                <h5 class="text-white font-bold uppercase tracking-wider mb-4">Quick Links</h5>
+                <ul class="space-y-2">
+                    <li><a href="golf.html" class="hover:text-white">Green Fees</a></li>
+                    <li><a href="membership.html" class="hover:text-white">Membership</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Find Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center border-t border-stone-800 pt-8 text-xs">
+            &copy; 2025 West Bank Golf Club. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
