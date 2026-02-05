@@ -3,89 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>West Bank Golf Club | See the Sea from Every Tee</title>
+    <title>West Bank Golf Club | East London</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        h1, h2, h3, h4, .font-serif { font-family: 'Playfair Display', serif; }
+        
+        /* Using your screenshot as the main background because it's the largest image */
         .hero-bg { 
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?auto=format&fit=crop&q=80&w=2070');
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('img/Screenshot (138).jpg');
             background-size: cover;
-            background-position: center;
+            background-position: center 20%; /* Adjusted to focus on the lighthouse in the screenshot */
         }
     </style>
 </head>
 <body class="bg-stone-50 text-stone-900 flex flex-col min-h-screen">
 
-    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold tracking-tighter text-emerald-900">
-                WEST BANK <span class="text-stone-500 font-light text-base">GOLF CLUB</span>
+    <nav class="bg-white sticky top-0 z-50 border-b border-stone-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="img/logo.png" alt="West Bank Golf Club Logo" class="h-16 md:h-20 w-auto object-contain">
             </a>
-            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-widest uppercase text-stone-600">
+            
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-widest uppercase text-stone-600 items-center">
                 <a href="index.html" class="text-emerald-800">Home</a>
                 <a href="golf.html" class="hover:text-emerald-800 transition">The Course</a>
                 <a href="membership.html" class="hover:text-emerald-800 transition">Membership</a>
                 <a href="contact.html" class="hover:text-emerald-800 transition">Contact</a>
+                <a href="tel:0437311523" class="bg-emerald-900 text-white px-6 py-3 rounded text-xs font-bold hover:bg-emerald-800 transition">
+                    Book Tee Time
+                </a>
             </div>
-            <a href="tel:0437311523" class="hidden md:inline-block bg-emerald-900 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-emerald-800 transition shadow-lg">
-                Book a Tee
-            </a>
         </div>
     </nav>
 
     <header class="hero-bg h-[85vh] flex items-center justify-center text-center text-white px-4">
-        <div class="max-w-4xl animate-fade-in-up">
+        <div class="max-w-4xl bg-black/40 backdrop-blur-sm p-8 rounded-xl border border-white/10 shadow-2xl">
             <p class="uppercase tracking-[0.3em] text-sm mb-4 text-emerald-300 font-semibold">East London, South Africa</p>
-            <h1 class="text-5xl md:text-8xl mb-6 leading-tight">See the sea from <br/> <i class="font-serif italic text-emerald-400">every tee.</i></h1>
-            <p class="text-lg md:text-xl font-light mb-10 text-stone-200 max-w-2xl mx-auto">
-                Home to the historic Hood Point Lighthouse. Experience the wild beauty of the Eastern Cape’s premier coastal course.
+            <h1 class="text-5xl md:text-7xl mb-6 leading-tight drop-shadow-lg">
+                Where the Ocean <br/> Meets the Green
+            </h1>
+            <p class="text-lg md:text-xl font-light mb-10 text-stone-100 max-w-2xl mx-auto drop-shadow-md">
+                Play one of South Africa's most unique coastal courses, home to the historic Hood Point Lighthouse.
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="golf.html" class="bg-white text-emerald-900 px-8 py-4 rounded font-bold uppercase tracking-wider hover:bg-stone-100 transition shadow-xl">
+                <a href="golf.html" class="bg-white text-emerald-900 px-8 py-4 rounded font-bold uppercase tracking-wider hover:bg-emerald-50 transition shadow-xl">
                     View Green Fees
                 </a>
-                <a href="membership.html" class="border border-white text-white px-8 py-4 rounded font-bold uppercase tracking-wider hover:bg-white/10 transition">
-                    Join the Club
+                <a href="membership.html" class="border-2 border-white text-white px-8 py-4 rounded font-bold uppercase tracking-wider hover:bg-white hover:text-emerald-900 transition">
+                    Join Us
                 </a>
             </div>
         </div>
     </header>
 
     <section class="py-24 px-6 bg-white">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-            <div class="space-y-6">
-                <div class="inline-block border-b-2 border-emerald-800 pb-1 uppercase tracking-widest text-emerald-800 font-bold text-xs">Since 1907</div>
-                <h2 class="text-4xl md:text-5xl text-stone-900 leading-tight">A Historic Course on the Ocean's Edge</h2>
-                <p class="text-stone-600 leading-relaxed text-lg">
-                    Founded over a century ago, West Bank Golf Club is one of only three courses in South Africa with a working lighthouse in its midst. Whether you are battling the coastal winds on our signature 17th Par 3 or enjoying the view from the 19th hole, the ocean is your constant companion.
-                </p>
-                <div class="pt-4">
-                    <a href="golf.html" class="text-emerald-800 font-bold border-b border-emerald-800 hover:text-emerald-600 transition">Explore the Course Layout &rarr;</a>
-                </div>
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl text-stone-900 mb-4">A Course Like No Other</h2>
+                <div class="w-24 h-1 bg-emerald-800 mx-auto"></div>
             </div>
-            <div class="relative">
-                <div class="absolute -inset-4 bg-emerald-100 rounded-xl transform rotate-3 -z-10"></div>
-                <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&q=80&w=1000" alt="Golf Course View" class="rounded-lg shadow-2xl w-full object-cover h-96">
+
+            <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4 h-auto md:h-[600px]">
+                
+                <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl shadow-lg min-h-[300px]">
+                    <img src="img/My-project-12-150x150.png" alt="Hood Point Lighthouse" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105 blur-[1px] group-hover:blur-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
+                        <h3 class="text-white text-3xl font-serif">The Hood Point Lighthouse</h3>
+                        <p class="text-stone-300 mt-2">One of only three courses in SA with an active lighthouse.</p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-xl shadow-lg min-h-[200px]">
+                    <img src="img/DAH_1873-150x150.jpg" alt="17th Green" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="text-white font-bold uppercase tracking-widest border border-white px-4 py-2">Signature 17th</span>
+                    </div>
+                </div>
+
+                <div class="bg-stone-100 rounded-xl shadow-lg p-6 flex flex-col justify-center items-center text-center border border-stone-200 min-h-[200px]">
+                    <img src="img/hole-1-300x152.jpg" class="h-32 object-contain mb-4 mix-blend-multiply" alt="Hole Layout">
+                    <h4 class="text-xl text-emerald-900 mb-2">Strategic Layouts</h4>
+                    <a href="golf.html" class="mt-4 text-emerald-700 text-sm font-bold hover:underline">See Course Guide →</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-stone-900 text-stone-400 py-12 mt-auto">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 mb-8 text-sm">
+    <section class="bg-stone-100 border-t border-stone-200 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-stone-500 uppercase tracking-widest text-xs font-bold mb-8">Proudly Sponsored By</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-24 opacity-80 hover:opacity-100 transition duration-500">
+                <a href="https://www.willieduplessis.co.za/" target="_blank" class="group">
+                    <div class="bg-white px-8 py-4 rounded shadow-sm border border-stone-200 group-hover:-translate-y-1 transition text-left">
+                        <span class="block font-serif text-xl text-stone-800 font-bold">Willie du Plessis</span>
+                        <span class="block text-xs text-stone-500 uppercase tracking-wider">Properties</span>
+                    </div>
+                </a>
+
+                <a href="https://www.gbr4u.biz/" target="_blank" class="group">
+                    <div class="bg-white px-8 py-4 rounded shadow-sm border border-stone-200 group-hover:-translate-y-1 transition text-left">
+                        <span class="block font-sans text-xl text-emerald-900 font-black tracking-tighter">GBR<span class="text-orange-500">4U</span></span>
+                        <span class="block text-xs text-stone-500 uppercase tracking-wider">Networking</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-400 py-12">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-sm">
             <div class="col-span-1 md:col-span-2">
-                <h4 class="text-white text-xl mb-4">West Bank Golf Club</h4>
-                <p class="max-w-xs">One of the few golf clubs in the world where every tee offers a view of the ocean. Come play under the Hood Point Lighthouse.</p>
+                <img src="img/logo.png" class="h-16 mb-4 brightness-0 invert opacity-80" alt="Logo White">
+                <p class="max-w-xs">One of the few golf clubs in the world where every tee offers a view of the ocean.</p>
             </div>
             <div>
                 <h5 class="text-white font-bold uppercase tracking-wider mb-4">Contact</h5>
                 <p>1 Wetzlar Street, West Bank<br>East London, SA</p>
                 <p class="mt-2"><a href="tel:0437311523" class="hover:text-white">043 731 1523</a></p>
-                <p><a href="mailto:denean@westbankgolfclub.co.za" class="hover:text-white">denean@westbankgolfclub.co.za</a></p>
             </div>
             <div>
-                <h5 class="text-white font-bold uppercase tracking-wider mb-4">Quick Links</h5>
+                <h5 class="text-white font-bold uppercase tracking-wider mb-4">Links</h5>
                 <ul class="space-y-2">
                     <li><a href="golf.html" class="hover:text-white">Green Fees</a></li>
                     <li><a href="membership.html" class="hover:text-white">Membership</a></li>
@@ -93,9 +133,10 @@
                 </ul>
             </div>
         </div>
-        <div class="text-center border-t border-stone-800 pt-8 text-xs">
-            &copy; 2025 West Bank Golf Club. All Rights Reserved.
+        <div class="text-center border-t border-stone-800 pt-8 text-xs mt-8">
+            © 2025 West Bank Golf Club. All Rights Reserved.
         </div>
     </footer>
+
 </body>
 </html>
